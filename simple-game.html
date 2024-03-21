@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple-Game</title>
+   <link rel="stylesheet" href="styles/simple-game.css">
+    
+</head>
+<body>
+    <p><h2>Pick each one object three times and correct your scores</h2></p><br>
+    <button onclick="playGame('Man')" class="move-button"> 
+        <img src="images/man.png" class="image">  
+    </button>
+      
+    <button onclick="playGame('Woman');" class="move-button">
+        <img src="images/woman.png" class="image">
+    </button>
+    
+
+    <button onclick =" playGame('Animal');"  class="move-button">
+        <img src="images/Animal.png"  class="image">
+    </button>
+    
+
+    <p class="js-result  result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
+    
+
+    <button onclick="score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        updateScore(); " class="reset-score">Reset score
+    </button>
+
+    <p>Created by: Tumsifu Alfred</p>
+    
+    
+    <script src="scripts/simple-game.js "></script>   
+
+</body>
+</html>
